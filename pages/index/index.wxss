@@ -1,0 +1,61 @@
+.wrapper {
+  width: 100%;
+}
+.wrapper .swiper {
+  width: 100%;
+  height: 340rpx;
+}
+.wrapper .swiper image {
+  width: 100%;
+}
+.wrapper .nav {
+  width: 100%;
+  height: 150rpx;
+  margin-top: 30rpx;
+}
+.wrapper .nav .nav-swiper {
+  height: 100%;
+}
+.wrapper .nav .nav-swiper .nav-swiper-item {
+  display: flex;
+  justify-content: space-around;
+}
+.wrapper .nav .nav-swiper .nav-swiper-item .item-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrapper .nav .nav-swiper .nav-swiper-item .item-view .img {
+  width: 100rpx;
+  height: 100rpx;
+}
+.wrapper .floor {
+  width: 100%;
+  overflow: hidden;
+}
+.wrapper .floor .floor-group {
+  width: 100%;
+}
+.wrapper .floor .floor-group .floor-title {
+  font-size: 42rpx;
+  color: #ff8cc6;
+  padding: 12rpx 40rpx;
+  text-shadow: 4px 4px 8px #000000;
+}
+.wrapper .floor .floor-group .floor-center {
+  width: 100%;
+}
+.wrapper .floor .floor-group .floor-center navigator {
+  float: left;
+  width: 33.33%;
+}
+.wrapper .floor .floor-group .floor-center navigator:nth-of-type(1) image {
+  width: 232rpx;
+  height: 400rpx;
+  margin-left: 10rpx;
+}
+.wrapper .floor .floor-group .floor-center image {
+  width: 232rpx;
+  height: 197.5rpx;
+  border-radius: 5rpx;
+}

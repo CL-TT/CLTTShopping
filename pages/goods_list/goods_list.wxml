@@ -1,0 +1,17 @@
+<!-- 商品列表页面 -->
+
+<view class="wrapper">
+  <!-- 搜索框部分 -->
+  <search-input url="{{ navigate_url }}"/>
+
+  <!-- 选项卡部分 -->
+  <view class="choose">
+    <tabs tabArr="{{ tabArr }}" bindchangeStyle="changeStyle">
+    <block wx:if="{{ tabArr[0].isActive }}">
+      <goods-list goods-list="{{ goodsList }}"/>
+    </block>
+    <block wx:if="{{ tabArr[1].isActive }}">2</block>
+    <block wx:if="{{ tabArr[2].isActive }}">3</block>
+  </tabs>
+  </view>
+</view>

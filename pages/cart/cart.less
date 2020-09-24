@@ -1,0 +1,140 @@
+//地址列表部分
+.address-list {
+  width: 100%;
+  background-color: #f4ffff;
+
+  .item {
+    padding: 10rpx 14rpx 5rpx;
+  }
+}
+
+// 购物车商品列表部分
+.car-list {
+  width: 100%;
+
+  .list-title {
+    font-size: 32rpx;
+    font-weight: bold;
+    padding: 20rpx 30rpx;
+    border-bottom: 2rpx solid #ccc;
+  }
+
+  .list-content {
+    width: 100%;
+    margin-top: 10rpx;
+
+    .list-item {
+      display: flex;
+      align-items: center;
+      border-bottom: 2rpx solid #ccc;
+      padding-top: 5rpx;
+
+      .item-checkbox {
+        flex: 1;
+        margin-left: 20rpx;
+      }
+
+      .img {
+        flex: 3;
+
+        image {
+          width: 100%;
+          height: 260rpx;
+        }
+      }
+
+      .item-main {
+        flex: 4;
+        position: relative;
+
+        .main-text {
+          width: 100%;
+          font-size: 40rpx;
+          color: #666;
+          overflow: hidden;
+          -webkit-box-orient: vertical;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          padding: 20rpx 10rpx 5rpx 40rpx;
+          position: absolute;
+          top: -140rpx;
+        }
+
+        .main-content {
+          display: flex;
+          justify-content: space-between;
+          position: absolute;
+          bottom: -100rpx;
+
+          .price {
+            font-size: 32rpx;
+            color: var(--themeColor);
+            padding: 0 30rpx 0 20rpx;
+          }
+
+          .num {
+            padding-right: 40rpx;
+            display: flex;
+            font-size: 32rpx;
+
+            .btn {
+              width: 50rpx;
+              height: 50rpx;
+              text-align: center;
+              line-height: 50rpx;
+              font-size: 40rpx;
+              border: 2rpx solid #ccc;
+            }
+
+            .add {
+              margin-left: 26rpx;
+
+            }
+
+            .sub {
+              margin-right: 20rpx;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// 底部结算栏部分
+
+.bottom-util {
+  width: 100%;
+  height: 110rpx;
+  position: fixed;
+  border-top: 2rpx solid #ccc;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .check {
+    padding-left: 20rpx;
+    display: flex;
+  }
+
+  .sum {
+    padding-left: 100rpx;
+
+    .price {
+      font-size: 34rpx;
+      color: var(--themeColor);
+      padding-left: 20rpx;
+    }
+  }
+
+  .pay {
+    width: 200rpx;
+    height: 100%;
+    background-color: var(--themeColor);
+    color: white;
+    font-size: 38rpx;
+    text-align: center;
+    line-height: 110rpx;
+  }
+}

@@ -1,0 +1,5 @@
+<!-- 商品列表组件 -->
+
+<view class="goodslist">
+  <goods wx:for="{{ goodsList }}" wx:key="goods_id" goods="{{ item }}"/>
+</view>

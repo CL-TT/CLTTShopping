@@ -1,0 +1,10 @@
+<!-- 选项卡组件 -->
+
+<view class="tabs">
+  <view class="tab-title">
+    <view class="tabs-view {{ item.isActive? 'active' : '' }}" wx:for="{{ tabArr }}" wx:key="id" bindtap="change" data-index="{{ index }}">{{ item.value }}</view>
+  </view>
+  <view class="tab-content">
+    <slot></slot>
+  </view>
+</view>

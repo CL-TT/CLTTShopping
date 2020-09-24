@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "tabs": "../../components/Tabs/Tabs",
+    "btns": "../../components/Btns/Btns",
+    "img-btn": "../../components/ImgBtn/ImgBtn"
+  },
+  "navigationBarTitleText": "意见反馈",
+  "navigationBarBackgroundColor": "#eb4450",
+  "navigationBarTextStyle":"white"
+}

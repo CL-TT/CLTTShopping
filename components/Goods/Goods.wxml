@@ -1,0 +1,12 @@
+<!-- 单个商品的组件 -->
+<!-- 这个url本不应该写死，应该是外界传进来的 -->
+
+<navigator class="goods" url="/pages/goods_detail/goods_detail?goods_id={{ goods.goods_id }}">
+  <view class="goods-left">
+    <image class="src" src="{{ goods.img_src }}"></image>
+  </view>
+  <view class="goods-right">
+    <view class="right-title">{{ goods.goods_name }}</view>
+    <view class="right-price">￥{{ goods.goods_price }}</view>
+  </view>
+</navigator>

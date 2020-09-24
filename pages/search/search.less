@@ -1,0 +1,52 @@
+.search-page {
+  width: 100%;
+
+  //搜索框部分
+  .search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .search-wrap {
+      display: flex;
+      align-items: center;
+      position: relative;
+
+      .icon {
+        position: absolute;
+        left: 7%;
+        font-weight: bold;
+      }
+
+      .search-input {
+        margin: 20rpx 30rpx;
+        width: 400rpx;
+        border: 2rpx solid #ccc;
+        padding: 8rpx 46rpx;
+        border-radius: 10rpx;
+      }
+    }
+
+    .cancel {
+      border: 2rpx solid #ccc;
+      padding: 8rpx 20rpx;
+      margin-right: 20rpx;
+    }
+  }
+
+  .goods-list {
+    width: 100%;
+
+    .goods-item {
+      padding: 8rpx 20rpx;
+      overflow: hidden;
+      -webkit-box-orient: vertical;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      font-size: 32rpx;
+      border-bottom: 2rpx solid #ccc;
+      margin-bottom: 20rpx;
+    }
+
+  }
+}

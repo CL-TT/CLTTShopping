@@ -1,0 +1,15 @@
+/* components/SearchInput/SearchInput.less */
+.search {
+  height: 90rpx;
+  padding: 14rpx;
+  background-color: var(--themeColor);
+}
+.search .nav {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 10rpx;
+  color: #666;
+}

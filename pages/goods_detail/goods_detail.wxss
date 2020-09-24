@@ -1,0 +1,120 @@
+.detail-page {
+  width: 100%;
+  height: 100%;
+  background-color: #ccc;
+  overflow-x: hidden;
+}
+.detail-page .swiper {
+  height: 34vh;
+  text-align: center;
+}
+.detail-page .swiper .img {
+  width: 100%;
+  height: 100%;
+}
+.detail-page .desc {
+  width: 100%;
+  height: 156rpx;
+  background-color: white;
+}
+.detail-page .desc .price {
+  font-size: 32rpx;
+  font-weight: bold;
+  padding: 16rpx 30rpx 5rpx 20rpx;
+  color: var(--themeColor);
+}
+.detail-page .desc .content {
+  display: flex;
+}
+.detail-page .desc .content .title {
+  flex: 5;
+  padding: 0 14rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.detail-page .desc .content .like {
+  flex: 1;
+  border-left: 4rpx solid #ccc;
+  padding: 0rpx 20rpx;
+  text-align: center;
+}
+.detail-page .desc .content .like .icon-shoucang3 {
+  color: var(--themeColor);
+}
+.detail-page .desc .content .like .font {
+  font-size: 40rpx;
+  padding-bottom: 6rpx;
+}
+.detail-page .pic-desc {
+  width: 100%;
+  margin-top: 6rpx;
+  background-color: white;
+}
+.detail-page .pic-desc .pic-desc-title {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: var(--themeColor);
+  padding: 20rpx 20rpx;
+  border-bottom: 6rpx solid #ccc;
+}
+.detail-page .pic-desc .rich {
+  width: 100%;
+  overflow-x: hidden;
+}
+.detail-page .util-btn {
+  width: 100%;
+  height: 8vh;
+  position: fixed;
+  bottom: 0;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2rpx solid #ccc;
+}
+.detail-page .util-btn .btn-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.detail-page .util-btn .btn-item text.iconfont {
+  font-size: 32rpx;
+}
+.detail-page .util-btn .btn-item text {
+  padding: 2rpx 0;
+  font-size: 26rpx;
+}
+.detail-page .util-btn .btn-item .button {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.detail-page .util-btn .first {
+  padding-left: 20rpx;
+}
+.detail-page .util-btn .text {
+  flex-direction: row;
+  height: 100%;
+}
+.detail-page .util-btn .text .addcar,
+.detail-page .util-btn .text .buy {
+  height: 100%;
+  color: white;
+  text-align: center;
+  line-height: 8vh;
+  width: 180rpx;
+  font-size: 30rpx;
+}
+.detail-page .util-btn .text .addcar {
+  background-color: #f97c00;
+}
+.detail-page .util-btn .text .buy {
+  background-color: var(--themeColor);
+}

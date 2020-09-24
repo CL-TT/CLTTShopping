@@ -1,0 +1,37 @@
+<view class="wrapper">
+  <!-- 1. 搜索框组件 -->
+  <search-input url="{{ navigate_url }}"/>
+  <!-- 2. 轮播图部分 这个导航的url本应传一个goods_id这个参数，最为商品的标识-->
+  <swiper class="swiper" autoplay indicator-dots indicator-active-color="red"
+  indicator-color="white" circular>
+    <swiper-item wx:for="{{ swiper_arr }}" wx:key="item">
+      <navigator url="{{ item.navigator_url }}">
+        <image mode="widthFix" src="{{ item.img_src }}"></image>
+      </navigator>
+    </swiper-item>
+  </swiper>
+  <!-- 3. 导航部分 -->
+  <view class="nav">
+    <swiper class="nav-swiper">
+      <swiper-item class="nav-swiper-item">
+        <!-- 这里的所有导航都是跳转到分类页面了 -->
+        <navigator open-type="switchTab" url="/pages/category/category" class="item-view" wx:for="{{ category_arr }}" wx:key="_id">
+          <image class="img" src="{{ item.img_src }}"></image>
+          <text>{{ item.name }}</text>
+        </navigator>
+      </swiper-item>
+    </swiper>
+  </view>
+  <!-- 4. 楼层部分 -->
+  <view class="floor">
+    <view class="floor-group" wx:for="{{ floor_arr }}" wx:key="_id">
+      <view class="floor-title">{{ item.floor_title.name }}</view>
+      <view class="floor-center">
+        <!-- 这些商品跳转到详情页，但是参数都是一样的 -->
+        <navigator url="/pages/goods_detail/goods_detail?goods_id=1111" wx:for="{{ item.product_list }}" wx:key="name" wx:for-item="item2">
+          <image src="{{ item2.img_src }}"></image>
+        </navigator>
+      </view>
+    </view>
+  </view>
+</view>

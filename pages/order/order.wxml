@@ -1,0 +1,22 @@
+<!-- 订单页面 -->
+
+<view class="order-page">
+  <tabs tabArr="{{ tabArr }}" bindchangeStyle="changeStyle">
+    <view class="order-main">
+      <view class="order-item" wx:for="{{ orderList }}" wx:key="order_id">
+        <view class="order-id order">
+          <text>订单编号</text>
+          <text>{{ item.order_id }}</text>
+        </view>
+        <view class="order-price order">
+          <text>订单价格</text>
+          <text class="price">￥{{ item.order_price }}</text>
+        </view>
+        <view class="order-date order">
+          <text>订单日期</text>
+          <text class="date">{{ item.time }}</text>
+        </view>
+      </view>
+    </view>
+  </tabs>
+</view>

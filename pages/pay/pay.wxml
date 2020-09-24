@@ -1,0 +1,47 @@
+<!-- 支付界面 -->
+
+<view class="pay-page">
+  <!-- 地址列表 -->
+  <view wx:if="{{ addressObj.userName }}" class="address-list" >
+    <view class="item">收货人：{{ addressObj.userName }}</view>
+    <view class="item">联系电话：{{ addressObj.telNumber}}</view>
+    <view class="item">收货地址：{{ addressObj.all }}</view>
+  </view>
+
+  <!-- 购物车商品列表 -->
+  <view class="car-list">
+    <view class="list-title">宝贝清单</view>
+    <view class="list-content">
+    <!-- 有商品和没有商品的切换 -->
+      <block wx:if="{{ carArr.length != 0 }}">
+        <view class="list-item" wx:for="{{ carArr }}" wx:key="goods_id">
+        <navigator class="img">
+          <image src="{{ item.pics[0].pic_src }}"></image>
+        </navigator>
+        <view class="item-main">
+          <view class="main-text">{{ item.goods_name }}</view>
+          <view class="main-content">
+            <view class="price">￥{{ item.goods_price }}</view>
+            <view class="num">
+              <view class="count">X{{ item.num }}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+      </block>
+      <block wx:else>
+        <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1600436855084&di=c63cc272c37b744257a2de018a811527&imgtype=0&src=http%3A%2F%2Fhbimg.b0.upaiyun.com%2Fe1b1467beea0a9c7d6a56b32bac6d7e5dcd914f7c3e6-YTwUd6_fw658" mode="widthFix"></image>
+      </block>
+    </view>
+  </view>
+
+  <!-- 底部结算栏 -->
+  <view class="bottom-util">
+    <view class="sum">
+      <text>合计 :</text>
+      <text class="price">￥{{ sumMoney }}</text>
+      <view>包含邮费</view>
+    </view>
+    <view class="pay" bindtap="payMoney">支付({{ sumCount }})</view>
+  </view>
+</view>

@@ -1,0 +1,57 @@
+.wrapper {
+  width: 100%;
+  height: 100%;
+}
+.wrapper .main {
+  width: 100%;
+  height: calc(100vh - 90rpx);
+  display: flex;
+}
+.wrapper .main .left {
+  flex: 1.8;
+}
+.wrapper .main .left .left-view {
+  display: flex;
+  padding: 16rpx 0 16rpx 50rpx;
+  justify-content: left;
+  align-items: center;
+  font-size: 28rpx;
+}
+.wrapper .main .left view.active {
+  color: var(--themeColor);
+  border-left: 8rpx solid var(--themeColor);
+  font-weight: bold;
+}
+.wrapper .main .right {
+  flex: 5;
+}
+.wrapper .main .right .right-group {
+  width: 100%;
+  font-size: 36rpx;
+}
+.wrapper .main .right .right-group .title {
+  padding: 12rpx 0;
+  height: 70rpx;
+  text-align: center;
+}
+.wrapper .main .right .right-group .title .block {
+  font-weight: bold;
+  padding: 0 16rpx;
+}
+.wrapper .main .right .right-group .content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.wrapper .main .right .right-group .content navigator {
+  width: 33.33%;
+  padding: 8rpx;
+}
+.wrapper .main .right .right-group .content navigator image {
+  width: 100%;
+  height: 146rpx;
+}
+.wrapper .main .right .right-group .content navigator .goods-name {
+  font-size: 26rpx;
+  text-align: center;
+  color: #565656;
+}

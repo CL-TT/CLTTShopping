@@ -1,0 +1,72 @@
+page {
+  width: 100%;
+  height: 100%;
+  background-color: #ccc;
+}
+
+.feedback-page {
+  width: 100%;
+
+  .main {
+    width: 100%;
+    height: 100%;
+    margin-top: 40rpx;
+
+
+    // 问题描述区
+    .text-wrap {
+      width: 94vw;
+      margin: 20rpx auto;
+      background-color: white;
+      padding-bottom: 30rpx;
+
+      .text-area {
+        padding: 20rpx;
+      }
+
+      .imgs {
+        width: 100%;
+        background-color: white;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-start;
+
+        .addimg {
+          width: 100rpx;
+          height: 100rpx;
+          font-size: 52rpx;
+          text-align: center;
+          line-height: 100rpx;
+          color: #6f6f6f;
+          background-color: #e6e6e6;
+          border: 2rpx solid #e8e8e8;
+          border-radius: 5rpx;
+          margin-left: 30rpx;
+        }
+
+        .img-item {
+          margin: 30rpx 0 30rpx 30rpx;
+        }
+      }
+    }
+
+    //提交区
+    .submit {
+      width: 300rpx;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--themeColor);
+      color: white;
+      padding: 20rpx 0;
+      border-radius: 10rpx;
+      font-size: 34rpx;
+      margin: 50rpx auto;
+
+      .send {
+        padding-left: 20rpx;
+      }
+    }
+  }
+}

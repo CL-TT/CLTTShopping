@@ -1,0 +1,29 @@
+<!-- 意见反馈页面 -->
+
+<view class="feedback-page">
+  <tabs tabArr="{{ tabArr }}" bindchangeStyle="changeStyle">
+    <view class="main">
+      <!-- 按钮区 -->
+      <view class="btns-wrap">
+        <btns btnArr="{{ btnArr }}" />
+      </view>
+
+      <!-- 问题描述区 -->
+      <view class="text-wrap">
+        <textarea value="{{ textValue }}" bindinput="handleInput" class="text-area" placeholder="请您描述您遇到的问题"></textarea>
+        <view class="imgs">
+          <view class="addimg" bindtap="chooseImg">+</view>
+          <view class="img-item" wx:for="{{ imgArr }}" wx:key="*this" bindtap="moveImg" data-index="{{ index }}">
+            <img-btn img-item="{{ item }}"/>
+          </view>
+        </view>
+      </view>
+
+      <!-- 提交区 -->
+      <view class="submit">
+        <icon type="success_no_circle" size="25" color="white"></icon>
+        <text class="send" bindtap="handleSubmit">提交</text>
+      </view>
+    </view>
+  </tabs>
+</view>

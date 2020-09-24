@@ -1,0 +1,5 @@
+<!-- 登录页面 -->
+
+<view class="login-page">
+  <button class="btn" open-type="getUserInfo" bindgetuserinfo="getUserInfo" type="primary" plain>登录授权</button>
+</view>

@@ -1,0 +1,127 @@
+page {
+  width: 100%;
+  height: 100%;
+  background-color: #d0d0d0;
+}
+.user-page {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.user-page .bg-img {
+  width: 100%;
+  height: 42vh;
+  position: relative;
+}
+.user-page .bg-img .bigimg {
+  width: 100%;
+  height: 100%;
+  filter: blur(12rpx);
+}
+.user-page .bg-img .info {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.user-page .bg-img .info .smallimg {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+}
+.user-page .bg-img .info .name {
+  font-size: 36rpx;
+  padding-top: 40rpx;
+  text-shadow: 4rpx 2rpx 8rpx #ff0000;
+}
+.user-page .login {
+  width: 96vw;
+  height: 34vh;
+  margin: 0 auto;
+  background-color: white;
+  position: relative;
+}
+.user-page .login .login-btn {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 30vw;
+  padding: 20rpx;
+  background-color: yellowgreen;
+  color: white;
+  font-size: 40rpx;
+  text-align: center;
+  border-radius: 10rpx;
+}
+.user-page .content {
+  position: absolute;
+  width: 96vw;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 36vh;
+}
+.user-page .content .like {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+}
+.user-page .content .like .like-item {
+  text-align: center;
+  padding: 14rpx 14rpx;
+}
+.user-page .content .my-order {
+  width: 100%;
+  margin-top: 30rpx;
+  background-color: white;
+  color: #505050;
+}
+.user-page .content .my-order .order-title {
+  font-size: 32rpx;
+  padding: 20rpx 26rpx;
+  border-bottom: 2rpx solid #ccc;
+}
+.user-page .content .my-order .order-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.user-page .content .my-order .order-main .order-item {
+  padding: 20rpx 16rpx;
+}
+.user-page .content .my-order .order-main .order-item .icon {
+  color: var(--themeColor);
+  font-size: 40rpx;
+}
+.user-page .content .address {
+  width: 100%;
+  background-color: white;
+  margin-top: 30rpx;
+  font-size: 32rpx;
+  padding: 20rpx 26rpx;
+}
+.user-page .content .utils {
+  width: 100%;
+  background-color: white;
+  margin-top: 30rpx;
+}
+.user-page .content .utils .telserver {
+  display: flex;
+  justify-content: space-between;
+}
+.user-page .content .utils .utils-item {
+  font-size: 32rpx;
+  padding: 20rpx 26rpx;
+  border-bottom: 2rpx solid #ccc;
+}
+.user-page .content .send {
+  width: 100%;
+  background-color: white;
+  margin: 30rpx 0 100rpx 0;
+  font-size: 32rpx;
+  padding: 20rpx 26rpx;
+}

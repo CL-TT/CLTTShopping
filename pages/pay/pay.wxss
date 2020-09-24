@@ -1,0 +1,93 @@
+.address-list {
+  width: 100%;
+  background-color: #f4ffff;
+}
+.address-list .item {
+  padding: 10rpx 14rpx 5rpx;
+}
+.car-list {
+  width: 100%;
+}
+.car-list .list-title {
+  font-size: 32rpx;
+  font-weight: bold;
+  padding: 20rpx 30rpx;
+  border-bottom: 2rpx solid #ccc;
+}
+.car-list .list-content {
+  width: 100%;
+  margin-top: 10rpx;
+}
+.car-list .list-content .list-item {
+  display: flex;
+  align-items: center;
+  border-bottom: 2rpx solid #ccc;
+  padding-top: 5rpx;
+}
+.car-list .list-content .list-item .img {
+  flex: 3;
+}
+.car-list .list-content .list-item .img image {
+  width: 100%;
+  height: 260rpx;
+  padding-left: 20rpx;
+}
+.car-list .list-content .list-item .item-main {
+  flex: 4;
+  position: relative;
+}
+.car-list .list-content .list-item .item-main .main-text {
+  width: 100%;
+  font-size: 40rpx;
+  color: #666;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  padding: 20rpx 10rpx 5rpx 40rpx;
+  position: absolute;
+  top: -140rpx;
+}
+.car-list .list-content .list-item .item-main .main-content {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: -100rpx;
+}
+.car-list .list-content .list-item .item-main .main-content .price {
+  font-size: 32rpx;
+  color: var(--themeColor);
+  padding: 0 30rpx 0 20rpx;
+}
+.car-list .list-content .list-item .item-main .main-content .num {
+  padding-right: 40rpx;
+  display: flex;
+  font-size: 32rpx;
+}
+.bottom-util {
+  width: 100%;
+  height: 110rpx;
+  position: fixed;
+  border-top: 2rpx solid #ccc;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bottom-util .sum {
+  padding-left: 100rpx;
+}
+.bottom-util .sum .price {
+  font-size: 34rpx;
+  color: var(--themeColor);
+  padding-left: 20rpx;
+}
+.bottom-util .pay {
+  width: 200rpx;
+  height: 100%;
+  background-color: var(--themeColor);
+  color: white;
+  font-size: 38rpx;
+  text-align: center;
+  line-height: 110rpx;
+}

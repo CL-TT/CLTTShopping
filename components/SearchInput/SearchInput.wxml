@@ -1,0 +1,11 @@
+<!--components/SearchInput/SearchInput.wxml-->
+
+<!-- 搜索组件 -->
+<!-- 1. 跳转的路径是使用者传进来的，但是有一个默认路径为搜索页面 -->
+
+<view class="search">
+  <!-- open-type:navigate是默认跳转到非tabbar页面 -->
+  <navigator class="nav" url="{{ url }}" open-type="navigate">
+    {{ title }}
+  </navigator>
+</view>

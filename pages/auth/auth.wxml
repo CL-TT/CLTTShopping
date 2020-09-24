@@ -1,0 +1,3 @@
+<view class="auth-page">
+  <button class="button" type="primary" plain open-type="getUserInfo" bindgetuserinfo="getUserInfo">获取授权</button>
+</view>

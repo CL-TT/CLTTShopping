@@ -1,0 +1,43 @@
+.search-page {
+  width: 100%;
+}
+.search-page .search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.search-page .search .search-wrap {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.search-page .search .search-wrap .icon {
+  position: absolute;
+  left: 7%;
+  font-weight: bold;
+}
+.search-page .search .search-wrap .search-input {
+  margin: 20rpx 30rpx;
+  width: 400rpx;
+  border: 2rpx solid #ccc;
+  padding: 8rpx 46rpx;
+  border-radius: 10rpx;
+}
+.search-page .search .cancel {
+  border: 2rpx solid #ccc;
+  padding: 8rpx 20rpx;
+  margin-right: 20rpx;
+}
+.search-page .goods-list {
+  width: 100%;
+}
+.search-page .goods-list .goods-item {
+  padding: 8rpx 20rpx;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  font-size: 32rpx;
+  border-bottom: 2rpx solid #ccc;
+  margin-bottom: 20rpx;
+}

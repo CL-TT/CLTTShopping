@@ -1,0 +1,33 @@
+.goods {
+  display: flex;
+  height: 240rpx;
+  padding: 10rpx 10rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+.goods .goods-left {
+  flex: 3.4;
+}
+.goods .goods-left .src {
+  width: 100%;
+  height: 100%;
+}
+.goods .goods-right {
+  flex: 4;
+  position: relative;
+}
+.goods .goods-right .right-title {
+  font-size: 28rpx;
+  font-weight: bold;
+  overflow: hidden;
+  padding: 8rpx 40rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+}
+.goods .goods-right .right-price {
+  color: var(--themeColor);
+  font-size: 32rpx;
+  position: absolute;
+  bottom: 10rpx;
+  left: 40rpx;
+}

@@ -1,0 +1,13 @@
+<!-- 收藏中心页面 -->
+
+<view class="collect-page">
+  <tabs tabArr="{{ tabArr }}" bindchangeStyle="changeStyle">
+    <view class="main">
+      <btns btnArr="{{ titleList }}" />
+      <goods-list wx:if="{{ colArr.length != 0 }}" goods-list="{{ colArr }}" />
+      <view wx:else>
+        <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1600542725567&di=0e83e8fe57caf6ea71158d2104a4c36f&imgtype=0&src=http%3A%2F%2Fhbimg.b0.upaiyun.com%2Fe1b1467beea0a9c7d6a56b32bac6d7e5dcd914f7c3e6-YTwUd6_fw658"></image>
+      </view>
+    </view>
+  </tabs>
+</view>

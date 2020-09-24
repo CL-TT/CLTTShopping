@@ -1,0 +1,6 @@
+<!-- 图片按钮组件 -->
+
+<view class="img-btn">
+  <image  class="image" src="{{ imgItem }}"></image>
+  <icon class="clear" type="clear" size="23" color="red"></icon>
+</view>

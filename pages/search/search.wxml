@@ -1,0 +1,18 @@
+<!-- 搜索页面 -->
+
+<view class="search-page">
+  <view class="search">
+    <view class="search-wrap">
+      <text class="icon iconfont icon-sousuo"></text>
+      <input type="search" class="search-input" placeholder="请输入您心仪的宝贝吧" bindinput="handleInput" value="{{ value }}"></input>
+    </view>
+    <!-- 频繁的切换，最好用hidden，因为他是控制样式的 -->
+    <button class="cancel" disabled="{{ isAble }}" bindtap="cancel">取消</button>
+  </view>
+
+  <view class="goods-list">
+    <navigator url="/pages/goods_detail/goods_detail?goods_id={{ item.goods_id }}" class="goods-item" wx:for="{{ queryArr }}" wx:key="goods_id">
+      {{ item.goods_name }}
+    </navigator>
+  </view>
+</view>

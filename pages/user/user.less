@@ -1,0 +1,153 @@
+page {
+  width: 100%;
+  height: 100%;
+  background-color: #d0d0d0;
+}
+
+.user-page {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  .bg-img {
+    width: 100%;
+    height: 42vh;
+    position: relative;
+
+    .bigimg {
+      width: 100%;
+      height: 100%;
+      filter: blur(12rpx); //高斯模糊
+    }
+
+    .info {
+      position: absolute;
+      left: 50%;
+      top: 30%;
+      transform: translateX(-50%);
+      text-align: center;
+
+      .smallimg {
+        width: 120rpx;
+        height: 120rpx;
+        border-radius: 50%;
+      }
+
+      .name {
+        font-size: 36rpx;
+        padding-top: 40rpx;
+        text-shadow: 4rpx 2rpx 8rpx #ff0000;
+      }
+    }
+  }
+
+  .login {
+    width: 96vw;
+    height: 34vh;
+    margin: 0 auto;
+    background-color: white;
+    position: relative;
+
+    .login-btn {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 30vw;
+      padding: 20rpx;
+      background-color: yellowgreen;
+      color: white;
+      font-size: 40rpx;
+      text-align: center;
+      border-radius: 10rpx;
+    }
+  }
+
+  .content {
+    position: absolute;
+    width: 96vw;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 36vh;
+
+    //收藏和足迹部分
+    .like {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: white;
+
+      .like-item {
+        text-align: center;
+        padding: 14rpx 14rpx;
+      }
+    }
+
+    //我的订单部分
+    .my-order {
+      width: 100%;
+      margin-top: 30rpx;
+      background-color: white;
+      color: #505050;
+
+      .order-title {
+        font-size: 32rpx;
+        padding: 20rpx 26rpx;
+        border-bottom: 2rpx solid #ccc;
+      }
+
+      .order-main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+
+        .order-item {
+          padding: 20rpx 16rpx;
+
+          .icon {
+            color: var(--themeColor);
+            font-size: 40rpx;
+          }
+        }
+      }
+    }
+
+    //收货地址管理
+    .address {
+      width: 100%;
+      background-color: white;
+      margin-top: 30rpx;
+      font-size: 32rpx;
+      padding: 20rpx 26rpx;
+    }
+
+
+    // 工具部分
+    .utils {
+      width: 100%;
+      background-color: white;
+      margin-top: 30rpx;
+
+      .telserver {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .utils-item {
+        font-size: 32rpx;
+        padding: 20rpx 26rpx;
+        border-bottom: 2rpx solid #ccc;
+      }
+    }
+
+    .send {
+      width: 100%;
+      background-color: white;
+      margin: 30rpx 0 100rpx 0;
+      font-size: 32rpx;
+      padding: 20rpx 26rpx;
+    }
+  }
+}

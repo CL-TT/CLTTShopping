@@ -1,0 +1,6 @@
+<!-- 按钮组件 -->
+<!-- 1. 传过来的是一个数组 -->
+
+<view class="btn-list">
+  <view class="btn-item {{ isActive == index? 'active' : '' }}" wx:for="{{ btnArr }}" wx:key="*this" bindtap="changeIndex" data-index="{{ index }}">{{ item }}</view>
+</view>

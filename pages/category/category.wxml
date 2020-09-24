@@ -1,0 +1,31 @@
+<!-- 分类页面 -->
+
+<view class="wrapper">
+  <!-- 1.搜索框组件 -->
+  <search-input url="{{ navigate_url }}"/>
+
+  <!-- 2. 主体内容 -->
+  <view class="main">
+    <!-- 左侧部分 -->
+    <scroll-view class="left" scroll-y>
+      <view class="left-view {{index == currentIndex? 'active' : ''}}" wx:for="{{ leftArr }}" wx:key="item" bindtap="change" data-index="{{index}}">{{ item }}</view>
+    </scroll-view>
+    <!-- 右侧部分 -->
+    <scroll-view class="right" scroll-y scroll-top="{{ scrollTop }}">
+      <view class="right-group" wx:for="{{ rightArr}}" wx:for-index="index1" wx:for-item="item1" wx:key="cat_id">
+        <view class="title">
+          <text class="block">---</text>
+          <text class="text">{{ item1.cat_name }}</text>
+          <text class="block">---</text>
+        </view>
+        <view class="content">
+        <!-- 这个地方是跳转到商品列表页 应该传递一个参数为cat_id -->
+          <navigator wx:for="{{ item1.children }}" wx:for-index="index2" wx:for-item="item2" wx:key="cat_id" url="/pages/goods_list/goods_list?cat_id={{ item1.cat_id }}">
+            <image src="{{ item2.cat_icon }}"></image>
+            <view class="goods-name">{{ item2.cat_name }}</view>
+          </navigator>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>

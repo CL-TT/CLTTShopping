@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "tabs": "../../components/Tabs/Tabs",
+    "goods-list": "../../components/GoodsList/GoodsList",
+    "btns": "../../components/Btns/Btns"
+  },
+  "navigationBarTitleText": "收藏中心",
+  "navigationBarBackgroundColor": "#eb4450",
+  "navigationBarTextStyle":"white"
+}
